@@ -1,0 +1,10 @@
+Script started on 2024-03-11 22:33:39-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="211" LINES="49"]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;32m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hssudo docker container run -it                run -it ubuntu[?1l>[?2004l
+]2;sudo docker run -it ubuntu]1;docker[sudo] password for dhl: 
+[?2004h]0;root@78fd4f724d98: /root@78fd4f724d98:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@78fd4f724d98: /root@78fd4f724d98:/# m touch /usr/src/app/n inkex.    dex.js
+[?2004l[?2004h]0;root@78fd4f724d98: /root@78fd4f724d98:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;32m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2024-03-11 22:34:19-05:00 [COMMAND_EXIT_CODE="0"]
