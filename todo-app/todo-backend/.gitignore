@@ -62,3 +62,6 @@ typings/
 
 # mongodata dir
 mongo_data/
+
+#redisdata dir
+redis_data/
