@@ -1,0 +1,82 @@
+Script started on 2024-03-12 23:42:51-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="211" LINES="47"]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;32m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker compose -f todo-app[1m/[0m[0m/batodo-backend[1m/[0m[0m/de
+[J[0mdocker-compose.dev.yaml  [J[01;34mnode_modules[0m/          [J[A[0m[27m[24m[23Cdocker compose -f todo-app/todo-backend/de[Kocker-compose.dev.yaml
+[J[7mdocker-compose.dev.yaml[0m  [J[01;34mnode_modules[0m/          [J[A[0m[27m[24m[23Cdocker compose -f todo-app/todo-backend/docker-compose.dev.yaml[K
+[7mdocker-compose.dev.yaml[0m  [7mdocker-compose.dev.yaml[0m  [A[0m[27m[24m[23Cdocker compose -f todo-app/todo-backend/docker-compose.dev.yaml[K
+[J[A[86C[1m [0m[0m up -d[?1l>[?2004l
+[J]2;docker compose -f todo-app/todo-backend/docker-compose.dev.yaml up -d]1;docker[1A[1B[0G[?25l[+] Running 1/0
+ [32m✔[0m Container todo-backend-mongo-1  [32mCreated[0m                                                                                                                                                                    [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCreated[0m                                                                                                                                                                    [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                                                                                                                                    [34m0.0s [0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;32m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker c ps[?1l>[?2004l
+]2;docker ps]1;dockerCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS         PORTS                                         NAMES
+b523d4e409c0   mongo     "docker-entrypoint.s…"   14 minutes ago   Up 4 seconds   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;32m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker exec 0ti   -it b5 bash -u root p -o p exm ap mple[?1l>[?2004l
+]2;docker exec -it b5 bash -u root -p example]1;dockerroot: root: Is a directory
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;31m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker exec -it b5 bash -u root -p example               [?1l>[?2004l
+]2;docker exec -it b5 bash]1;docker[?2004hroot@b523d4e409c0:/# mongosh -u root = -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	65f12f177d31b6d65c52c4e1
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.5[0m
+Using MongoDB:		7.0.6
+[1m[33mUsing Mongosh[0m:		2.1.5
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-03-13T04:43:05.637+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         96.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'65f0e62842d40de28961507d'[39m),
+    text: [32m'Write MORE code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'65f0e62842d40de28961507e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.find({}[31G[1G[0Jthe_database> db.todos.find({[30G[1G[0Jthe_database> db.todos.find([29G[1G[0Jthe_database> db.todos.find[28G[1G[0Jthe_database> db.todos.fin[27G[1G[0Jthe_database> db.todos.fi[26G[1G[0Jthe_database> db.todos.f[25G[1G[0Jthe_database> db.todos.[24Gadd[1G[0Jthe_database> db.todos.ad[26G[1G[0Jthe_database> db.todos.a[25G[1G[0Jthe_database> db.todos.[24G[1G[0Jthe_database> db.todos[23G.insertOne({text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m.[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m[86G, d[36mdo[39mdone: fals[33mfalse[39m})
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'65f12f577d31b6d65c52c4e2'[39m)
+}
+[1G[0Jthe_database> [15Gtodo[1G[0Jthe_database> tod[18G[1G[0Jthe_database> to[17G[1G[0Jthe_database> t[16G[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'65f0e62842d40de28961507d'[39m),
+    text: [32m'Write MORE code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'65f0e62842d40de28961507e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65f12f577d31b6d65c52c4e2'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@b523d4e409c0:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]7;file://fedora/home/dhl/FullStackOpen/part12\]2;dhl@fedora:~/FullStackOpen/part12]1;..ckOpen/part12]7;file://fedora/home/dhl/FullStackOpen/part12\[0m[27m[24m[J[01;32m➜  [36mpart12[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2024-03-12 23:45:34-05:00 [COMMAND_EXIT_CODE="0"]
