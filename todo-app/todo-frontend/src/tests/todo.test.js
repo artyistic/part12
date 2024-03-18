@@ -1,6 +1,5 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import Todo from "../Todos/Todo";
-import { useState } from "react";
 // afterEach function runs after each test suite is executed
 afterEach(() => {
   cleanup(); // Resets the DOM after each test suite

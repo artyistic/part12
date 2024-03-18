@@ -19,6 +19,5 @@ services:
     command: ["redis-server", "--appendonly", "yes"] # Overwrite the CMD
     volumes: # Declare the volume
       - ./redis_data:/data
-
 volumes:
   mongo_data:

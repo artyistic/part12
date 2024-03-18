@@ -1,5 +1,3 @@
-import List from "./List"
-
 const Todo = ({ todo, onClickDelete, onClickComplete }) => {
   const doneInfo = (
     <>
